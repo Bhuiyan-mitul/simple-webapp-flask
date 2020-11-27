@@ -12,11 +12,7 @@ pipeline {
                 sh "sudo docker run -d test-web"
             }
         }
-        stage('kubernetes'){
-            steps{
-                sh "sudo microk8s kubectl create deployment testweb --image=test-web"
-            }
-        }
+        
         
         
         
