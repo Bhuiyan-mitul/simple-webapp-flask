@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build docker image') {
             steps {
-                echo "hi this is build"
+                sh "sudo docker build . -t test-web"
             }
         }
         stage('Run the image'){
