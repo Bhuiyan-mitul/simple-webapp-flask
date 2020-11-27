@@ -12,7 +12,7 @@ pipeline {
                 echo "hi this is run"
             }
         }
-        stage('Run the image'){
+        stage('the image'){
             steps{
                 sh "docker --version"
             }
