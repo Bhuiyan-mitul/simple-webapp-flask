@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build docker image') {
             steps {
-                sh "docker build . -t test-web-again"
+                echo "hi this is build"
             }
         }
         stage('Run the image'){
             steps{
-                sh "docker run -d test-web-again"
+                echo "hi this is run"
             }
         }
         
