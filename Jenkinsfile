@@ -9,14 +9,10 @@ pipeline {
         }
         stage('Run the image'){
             steps{
-                echo "hi this is run"
+                sh "sudo docker run -d test-web"
             }
         }
-        stage('the image'){
-            steps{
-                sh "sudo docker run hello-world"
-            }
-        }
+        
         
         
     }
