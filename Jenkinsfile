@@ -14,7 +14,7 @@ pipeline {
         }
         stage('the image'){
             steps{
-                sh "docker --version"
+                sh "docker run hello-world"
             }
         }
         
