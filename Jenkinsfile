@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Run the image'){
             steps{
-                sh "docker run -d test-web-again"
+                sh "docker run test-web-again"
             }
         }
         
